@@ -131,9 +131,9 @@ export default function define(runtime, observer) {
   const main = runtime.module();
   function toString() { return this.url; }
   const fileAttachments = new Map([
-    ["data.csv", {url: new URL("./files/83c96c267209a5a83873782dd52a53d2279a4259120ac9be5a3908c249b7b081158e79a961ebabfd765d48f4c119ca807a9e655f37575bac0978e1de9681d85a.csv", import.meta.url), mimeType: "text/csv", toString}],
-    ["iot.jpg", {url: new URL("./files/56fb2e071529bd6b50d5fd939500ac6423ebdc77557afa99811f703770494ac4acbb4e3ac530fec818932ef1c4e39271bc3b9943178998086211235c65c84f1c.jpeg", import.meta.url), mimeType: "image/jpeg", toString}],
-    ["perameter.jpg", {url: new URL("./files/6fd592164fdbae7cec443fb5f967a275c3c4ecbb20807c2b479dc01a74de4f11b5e68abcd67b0dd1582eab9eb12dcd2f84b77f5f69be8b6005ac745331438cdb.jpeg", import.meta.url), mimeType: "image/jpeg", toString}]
+    ["data.csv", {url: new URL("cse407_dashboard/data.csv", import.meta.url), mimeType: "text/csv", toString}],
+    ["iot.jpg", {url: new URL("cse407_dashboard/56fb2e071529bd6b50d5fd939500ac6423ebdc77557afa99811f703770494ac4acbb4e3ac530fec818932ef1c4e39271bc3b9943178998086211235c65c84f1c.jpeg", import.meta.url), mimeType: "image/jpeg", toString}],
+    ["perameter.jpg", {url: new URL("cse407_dashboard/6fd592164fdbae7cec443fb5f967a275c3c4ecbb20807c2b479dc01a74de4f11b5e68abcd67b0dd1582eab9eb12dcd2f84b77f5f69be8b6005ac745331438cdb.jpeg", import.meta.url), mimeType: "image/jpeg", toString}]
   ]);
   main.builtin("FileAttachment", runtime.fileAttachments(name => fileAttachments.get(name)));
   main.variable(observer()).define(["md"], _1);
