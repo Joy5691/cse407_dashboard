@@ -1,0 +1,14 @@
+{
+  "name": "345f3c8a127cf68b",
+  "main": "345f3c8a127cf68b@414.js",
+  "version": "414.0.0",
+  "homepage": "https://observablehq.com/d/345f3c8a127cf68b",
+  "author": {
+    "name": "greencomputing",
+    "url": "https://observablehq.com/@greencomputing"
+  },
+  "type": "module",
+  "peerDependencies": {
+    "@observablehq/runtime": "4 - 5"
+  }
+}
